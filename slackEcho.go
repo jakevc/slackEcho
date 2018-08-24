@@ -18,6 +18,6 @@ func handler(w http.ResponseWriter, r *http.Request) {
 
 func main() {
 	// handle request and echo
-	http.HandleFunc("/echo", handler)
+	http.HandleFunc("/", handler)
 	log.Fatal(http.ListenAndServe(":5038", nil))
 }
